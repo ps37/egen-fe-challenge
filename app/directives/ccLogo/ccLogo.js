@@ -14,7 +14,7 @@ angular.module('app.directives', [])
             link: function (scope, element, attrs) {
                 scope.$watch('creditCardNo', function () {
 
-                    if (scope.creditCardNo && scope.creditCardNo.length > 4) {
+                    if (scope.creditCardNo && scope.creditCardNo.length > 5) {
                         //Check what company card number is typed
                         //and get the corresponding url
                         for (var value of scope.creditCardsInfo)
