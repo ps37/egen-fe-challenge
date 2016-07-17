@@ -1,0 +1,23 @@
+{
+  "result":[{
+    "regex": "^(34|37)",
+    "cardName": "amex",
+    "imgUrl": "http://imgh.us/amex.png"
+  },{
+    "regex": "^4[0-9]{6,}$",
+    "cardName": "visa",
+    "imgUrl": "http://imgh.us/visa_2.png"
+  },{
+    "regex": "^5[1-5]",
+    "cardName": "masterCard",
+    "imgUrl": "http://imgh.us/mastercard.png"
+  },{
+    "regex": "^6(?:011|5[0-9]{2}|22[0-9]{3}|4[0-9]{1})[0-9]{3,}$",
+    "cardName": "discover",
+    "imgUrl": "http://imgh.us/discover.png"
+  },{
+    "regex": "^50|5[6-9]|6[0-9]",
+    "cardName": "maestro",
+    "imgUrl": "http://imgh.us/maestro.png"
+  } ]
+}
