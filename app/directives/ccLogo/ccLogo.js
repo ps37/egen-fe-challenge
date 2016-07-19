@@ -9,7 +9,10 @@ angular.module('app.directives', [])
                 creditCardNo: '=',
                 creditCardsInfo: '='
             },
-            templateUrl: "../app/directives/ccLogo/ccLogo.html",
+            template: "<div id='input_container'>" +
+        "<label class='control-label'><i class='glyphicon glyphicon-asterisk blue'></i>CARD NUMBER</label><br>" +
+        "<input numbers-only id='creditCardNo' type='text' class='input-sm' ng-model='creditCardNo' maxlength='19/'/>" + "</div>",
+            //templateUrl: "../app/directives/ccLogo/ccLogo.html",
             replace: true,
             link: function (scope, element, attrs) {
                 scope.$watch('creditCardNo', function () {

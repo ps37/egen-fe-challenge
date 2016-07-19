@@ -1,34 +1,35 @@
 module.exports = function(config){
-  config.set({
+    config.set({
 
-    basePath : './',
+        basePath : './',
+        //'app/components/**/*.js',
+        files : [
+            'app/bower_components/angular/angular.js',
+            'app/bower_components/angular-route/angular-route.min.js',
+            'app/bower_components/angular-ui-router/release/angular-ui-router.min.js',
+            'app/bower_components/angular-mocks/angular-mocks.js',
+            'app/app.js',
+            'app/directives/**/*.js',
+            'app/directives/**/*.spec.js'
+        ],
 
-    files : [
-      'app/bower_components/angular/angular.js',
-      'app/bower_components/angular-route/angular-route.js',
-      'app/bower_components/angular-mocks/angular-mocks.js',
-      'app/components/**/*.js',
-      'app/*.spec.js',
-      'app/directives/**/*.spec.js'
-    ],
+        autoWatch : true,
 
-    autoWatch : true,
+        frameworks: ['jasmine'],
 
-    frameworks: ['jasmine'],
+        browsers : ['Chrome'],
 
-    browsers : ['Chrome'],
-
-    plugins : [
+        plugins : [
             'karma-chrome-launcher',
             'karma-firefox-launcher',
             'karma-jasmine',
             'karma-junit-reporter'
-            ],
+        ],
 
-    junitReporter : {
-      outputFile: 'test_out/unit.xml',
-      suite: 'unit'
-    }
+        junitReporter : {
+            outputFile: 'test_out/unit.xml',
+            suite: 'unit'
+        }
 
-  });
+    });
 };
